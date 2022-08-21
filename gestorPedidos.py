@@ -24,6 +24,7 @@ while(codigo!=-1) :
     codigo = int(input("¿Qué código desea agregar al pedido? (Ingrese -1 para finalizar)"))
 
     if(codigo!=-1):
+        #get() devuelve el valor en base a una coincidencia de búsqueda en un diccionario mediante una clave, de lo contrario devuelve el objeto None.
         datosAInsertar = datos.get(codigo)
         pedido.append(datosAInsertar)
         print("Producto cargado con éxito")

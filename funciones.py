@@ -39,11 +39,13 @@ print(cuentaVocales("Este teto tiene vocales"))
         
 def saludoDos(nombre = "persona", apellido = "desconocida"):
     return ("Bienvenido" + " " + nombre + " " + apellido)
+
+    
 print(saludoDos("Jenn", "Rossetti"))
 
 #------------
 #Función LAMBDA - versión de saludoDos en lambda
-saludando = lambda nom, ap:("Hola", + " " + nom + " " + ap)
+saludando = lambda nom, ap:("Hola " + " " + nom + " " + ap)
 print(saludando("jenn", "rossetti"))
 #------------
 #pares menores a n
