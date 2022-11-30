@@ -10,9 +10,12 @@ aleatorio = random.randint(1, 10) #randint produce un número entero aleatorio
 print(aleatorio)
 
 #------------------
-#importa el módulo funciones
-
+#importa todo el módulo funciones
 import funciones
+#del archivo funciones importa todos
+from funciones import *
+#del modulo funciones importa una sola función
+from funciones import cuentaVocales
 
 #Si se importo bien entonces cuenta las vocales del texto que le pasé
 print(funciones.cuentaVocales("hola jennifer"))

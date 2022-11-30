@@ -1,14 +1,16 @@
 from Vehiculo import Vehiculo
 class Auto(Vehiculo):
-    __marca = None
-    __modelo = None
+    _marca = None
+    _modelo = None
 
     def __init__(self, col, puer, tamanio, velMax, motor, marca, modelo):
         Vehiculo.__init__(self,col,puer,tamanio,velMax,motor)
-        self.__marca = marca
-        self.__modelo = modelo
+        self._marca = marca
+        self._modelo = modelo
     def arrancar(self):
         return("Auto arrancando...")
+
+
 
 #esto generalmete se hace en un archivo aparte y desde ahí se importa la clase Auto
 

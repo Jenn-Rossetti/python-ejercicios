@@ -1,14 +1,18 @@
 class Motor:
-    __caballosFuerza = None
-    __cantCilindros = None
-    __cilindrada = None
-    __tipoCombustible = None
+    _caballosFuerza = None
+    _cantCilindros = None
+    _cilindrada = None
+    _tipoCombustible = None
+    
     def __init__(self, cF, cC, cilindrada, tC):
-        self.__caballosFuerza = cF
-        self.__cantCilindros = cC
-        self.__cilindrada = cilindrada
-        self.__tipoCombustible = tC
+        self._caballosFuerza = cF
+        self._cantCilindros = cC
+        self._cilindrada = cilindrada
+        self._tipoCombustible = tC
+
+
     def getTipoCombustible(self):
-        return self.__tipoCombustible
+        return self._tipoCombustible
+
     def setTipoCombustible(self, tipo):
-        self.__tipoCombustible = tipo
+        self._tipoCombustible = tipo
